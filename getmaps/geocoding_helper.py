@@ -47,7 +47,7 @@ def geo_code(address):
     '''
 
     url = "https://maps.googleapis.com/maps/api/geocode/json?address={}".format(address)
-    url = url + "&key=AIzaSyBCpYvIiJTvCxuapvyXFamljQwn2AoaU9A"
+    url = url + "&key=YOURKEY"
 
     r = requests.get(url)
     data = r.json()
