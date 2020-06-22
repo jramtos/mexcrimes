@@ -63,15 +63,16 @@ Other locations :
 ![alt text](examples_app/structure.png "Overall Software Structure")
 
 **a)Django interface → Calls the module views.py**  
-* views.py → Returns the rendered site with the output. Calls the modules geocoding_helper.py and queries.py and the visualizations stored in the viz folder.
-* geocoding_helper.py → Connects to Google Maps API and returns the number of precinct that the input location belongs to.
-* queries.py → Performs the required queries of number of crimes on the crimes SQL database. Also, calls the modules shortest_distance.py and viz.py
-* shortest_distance.py →includes a function that calculates the distance of the input location (in km.) to all police stations in CDMX and returns the closest one.
-* viz.py→ Produces all four visualizations ( 2 maps and 2 bar graphs)
+* [views.py](getmaps/views.py) → Returns the rendered site with the output. Calls the modules geocoding_helper.py and queries.py and the visualizations stored in the viz folder.
+* [geocoding_helper.py](getmaps/geocoding_helper.py) → Connects to Google Maps API and returns the number of precinct that the input location belongs to.
+* [queries.py](queries.py) → Performs the required queries of number of crimes on the crimes SQL database. Also, calls the modules shortest_distance.py and viz.py
+* [shortest_distance.py](shortest_distance.py) →includes a function that calculates the distance of the input location (in km.) to all police stations in CDMX and returns the closest one.
+* [viz.py](viz.py)→ Produces all four visualizations ( 2 maps and 2 bar graphs)
 
 **b)How data is obtained?**
-* get_data.py → Connects to Mexico CIty’s Open Data API and obtains crime data from 2018 and 2019, as well as the police precincts delimitation and police stations locations. Calls the module data_cleaning.py, and stores the clean databases on the data folder
-* data_cleaning.py → Cleans the crimes database filtering by crimes that could affect the user depending on the way they travel.
+* [get_data.py](get_data.py) → Connects to Mexico CIty’s Open Data API and obtains crime data from 2018 and 2019, as well as the police precincts delimitation and police stations locations. Calls the module data_cleaning.py, and stores the clean databases on the data folder.  
+Run the following and it will download and update the data: ``python3 get_data.py```
+* [data_cleaning.py](data_cleaning.py) → Cleans the crimes database filtering by crimes that could affect the user depending on the way they travel.
 
 ## Project Accomplishments
 We achieved the main goal of showing the relevant visualizations we expected (all mentioned in Project overview) and also show the nearest police station (the term police station is used as equivalent to ”Ministerio Publico”, which is the administrative office where people go to report crimes in CDMX) to the location provided (we noticed there’s a small number).  
