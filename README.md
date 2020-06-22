@@ -30,8 +30,11 @@ And two bar graphs showing the number of crimes committed at the precinct of int
 ## Example of web app
 This is an example of the web application using "Av. Insurgentes Sur 339, Hipódromo, Cuauhtémoc, 06100 Ciudad de México, CDMX" as the address. Using Google Places API, as the user writes the address, the API offers some autocomplete options of addresses in Mexico City.
 ![alt text](examples_app/example1.png "Filling address")
-We also query only for crimes happening on Wednesdays from 9 am to 12 pm, when walking or using public transit.  
+
+Finally, we select the following inputs of interest: Wednesdays from 9 am to 12 pm, walking or using public transit (this queries crimes related to walking or using public transit).  
+
 ![alt text](examples_app/example2.png "Selecting other inputs")
+  
 With the specified inputs, this is the output that the app provides:  
 ![alt text](examples_app/example3.png "Ouput example: bar graphs")
 ![alt text](examples_app/example4.png "Ouput example: maps")
