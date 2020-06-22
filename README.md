@@ -29,16 +29,17 @@ And two bar graphs showing the number of crimes committed at the precinct of int
 
 ## Example of web app
 This is an example of the web application using "Av. Insurgentes Sur 339, Hipódromo, Cuauhtémoc, 06100 Ciudad de México, CDMX" as the address. Using Google Places API, as the user writes the address, the API offers some autocomplete options of addresses in Mexico City.
-We also query only for crimes happening on Wednesdays from 9 am to 12 pm, when walking or using public transit.
-
 ![alt text](examples_app/example1.png "Filling address")
+We also query only for crimes happening on Wednesdays from 9 am to 12 pm, when walking or using public transit.  
 ![alt text](examples_app/example2.png "Selecting other inputs")
+With the specified inputs, this is the output that the app provides:  
 ![alt text](examples_app/example3.png "Ouput example: bar graphs")
 ![alt text](examples_app/example4.png "Ouput example: maps")
 
 ## Setup
 If you want to replicate this web service application, some modules must be installed.
 See: [requirements.txt](requirements.txt)
+You will also need a Google API key, and substitute the ```YOURKEY``` text in the following files: [geocoding_helper.py](getmaps/geocoding_helper.py) and [mexcrimespage.html](getmaps/templates/mexcrimespage.html).
 
 To run the server simply run ```python3 manage.py runserver``` in the root directory.
 After running the server you should be able to visit ```http://127.0.0.1:8000/```
