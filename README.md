@@ -35,7 +35,7 @@ Finally, we select the following inputs of interest: Wednesdays from 9 am to 12 
 
 ![alt text](examples_app/example2.png "Selecting other inputs")
   
-With the specified inputs, this is the output that the app provides:  
+With the specified inputs, the app provides the following output:  
 ![alt text](examples_app/example3.png "Ouput example: bar graphs")
 ![alt text](examples_app/example4.png "Ouput example: maps")
 
