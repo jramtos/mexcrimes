@@ -71,7 +71,7 @@ Other locations :
 
 **b)How data is obtained?**
 * [get_data.py](get_data.py) → Connects to Mexico CIty’s Open Data API and obtains crime data from 2018 and 2019, as well as the police precincts delimitation and police stations locations. Calls the module data_cleaning.py, and stores the clean databases on the data folder.  
-Run the following and it will download and update the data: ``python3 get_data.py```
+Run the following and it will download and update the data: ```python3 get_data.py```
 * [data_cleaning.py](data_cleaning.py) → Cleans the crimes database filtering by crimes that could affect the user depending on the way they travel.
 
 ## Project Accomplishments
